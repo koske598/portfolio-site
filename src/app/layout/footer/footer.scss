@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.footer-content {
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f5f9;
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        a {
+            display: block;
+            img {
+                width: 40px;
+            }
+        }
+        a:first-child {
+            padding-right: 20px;
+        }
+    }
+}
