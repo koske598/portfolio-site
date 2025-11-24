@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.card {
+    max-width: 1000px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    margin:  50px auto;
+    background-color: #c9d6de;
+    .card-title {
+        display: flex;
+        p:first-child {
+            padding-right: 10px;
+        }
+        p:nth-child(2) {
+            padding-right: 10px;
+        }
+    }
+    .social {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+        a {
+            display: block;
+            img {
+                width: 40px;
+            }
+        }
+        a:first-child {
+            padding-right: 20px;
+        }
+    }
+}
