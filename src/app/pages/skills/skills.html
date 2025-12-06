@@ -8,21 +8,11 @@
         <p>Here are the main technologies I work with and explore in my personal projects.</p>
     </div>
     <ul class="skill-card-list">
-        <li class="skill-card">
-            <img src="assets\TypeScript.svg" alt="TypeScript" class="skill-icon" />
-            <p>TypeScript</p>
-        </li>
-        <li class="skill-card">
-            <img src="assets\Angular.svg" alt="Angular" class="skill-icon" />
-            <p>Angular</p>
-        </li>
-        <li class="skill-card">
-            <img src="assets\Java.png" alt="Java" class="skill-icon" />
-            <p>Java</p>
-        </li>
-        <li class="skill-card">
-            <img src="assets\Spring.svg" alt="Spring Boot" class="skill-icon" />
-            <p>Spring Boot</p>
-        </li>
+        @for(skill of skills; track skill.skillNo) {
+            <li class="skill-card">
+                <img [src]="skill.skillImage" [alt]="skill.imageAlt" class="skill-icon" />
+                <p>{{ skill.skillText }}</p>
+            </li>
+        }
     </ul>
 </div>
